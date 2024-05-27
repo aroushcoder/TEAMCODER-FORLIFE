@@ -1,0 +1,57 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+  svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+  }
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+  .path.circle {
+    animation: dash .9s ease-in-out;
+  }
+  
+  .path.check {
+    stroke-dashoffset: -100;
+    animation: check 3s ease-in infinite;
+  }
+  
+  p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
+  }
+  p.success {
+    color: #0a3a2a;
+  }
+  
+  @keyframes check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+.container{
+    text-align: center;
+}
+.button{
+
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+
+}
